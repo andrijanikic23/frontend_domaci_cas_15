@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<form class="form">
+			<div class="name">
+				<label for="name">Ime:</label>
+				<br />
+				<input id="name" type="text" placeholder="Unesite vase ime" required />
+			</div>
+
+			<div class="address">
+				<label for="address">Adresa:</label>
+				<br />
+				<input
+					id="address"
+					type="text"
+					placeholder="Unesite vasu adresu"
+					required
+				/>
+			</div>
+
+			<div class="email">
+				<label for="email">Email:</label>
+				<br />
+				<input
+					id="email"
+					type="text"
+					placeholder="Unesite vas email"
+					required
+				/>
+			</div>
+
+			<div>
+				<label for="city">Odaberite grad:</label>
+				<br />
+				<select id="city" name="city">
+					<option disabled selected>Izaberite grad</option>
+					<option>Beograd</option>
+					<option>Novi Sad</option>
+					<option>Subotica</option>
+				</select>
+			</div>
+
+			<div>
+				<p>Odaberite nacin placanja</p>
+
+				<input type="radio" id="cash" name="payment" value="cash" />
+				<label for="cash">Pouzecu</label>
+
+				<br />
+
+				<input type="radio" id="card" name="payment" value="card" />
+				<label for="card">Kreditnom karticom</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="emailInbox" />
+				<label for="emailInbox">Zelim da primam mejlove sa ponudama</label>
+			</div>
+
+			<button class="button">Posalji email</button>
+		</form>
+	</body>
+</html>

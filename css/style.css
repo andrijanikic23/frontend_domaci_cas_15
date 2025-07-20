@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	padding-top: 50px;
+}
+
+.name input,
+.address input,
+.email input {
+	border: 1px solid black;
+	height: 30px;
+	width: 200px;
+}
+
+.button {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 250px;
+	height: 30px;
+}
+
+@media only screen and (max-width: 1023px) {
+	.form {
+		width: 80%;
+	}
+}
